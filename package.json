@@ -1,0 +1,78 @@
+{
+  "name": "@saadeh/nextray",
+  "version": "1.0.0",
+  "description": "Next.js App Router overlay for visualizing Server/Client component boundaries.",
+  "type": "module",
+  "author": "Moemen Saade",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Moemen12/nextray"
+  },
+  "keywords": [
+    "nextjs",
+    "next",
+    "app-router",
+    "rsc",
+    "react-server-components",
+    "server-components",
+    "client-components",
+    "debugging",
+    "developer-tools",
+    "devtools",
+    "overlay",
+    "visualization",
+    "webpack-loader",
+    "typescript"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./plugin": {
+      "types": "./plugin.d.ts",
+      "import": "./plugin.mjs",
+      "require": "./plugin.cjs",
+      "default": "./plugin.mjs"
+    },
+    "./runtime": {
+      "types": "./dist/runtime.d.ts",
+      "import": "./dist/runtime.js"
+    },
+    "./overlay": {
+      "types": "./dist/overlay.d.ts",
+      "import": "./dist/overlay.js"
+    }
+  },
+  "files": [
+    "dist",
+    "plugin.mjs",
+    "plugin.cjs",
+    "plugin.d.ts",
+    "loader.cjs",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.28.0",
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "@babel/types": "^7.28.0"
+  },
+  "peerDependencies": {
+    "next": ">=14",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "typescript": "^5.8.3"
+  }
+}
