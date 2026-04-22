@@ -3,7 +3,6 @@
 > Visualize Server and Client Component boundaries in your Next.js App Router directly in the browser.
 
 ![npm](https://img.shields.io/npm/v/@saadeh/nextray)
-![license](https://img.shields.io/npm/l/@saadeh/nextray)
 ![next](https://img.shields.io/badge/Next.js-14%2B-black)
 
 ---
@@ -19,18 +18,17 @@ Nextray makes those boundaries visible instantly.
 
 ---
 
-## What It Shows
+## What It Does
+
+Nextray draws a live overlay on your page that shows exactly where your server/client boundaries are — no source diving, no guessing.
 
 | Visual | Meaning |
 |--------|---------|
-| Blue border + tint | Server Component region |
-| Orange border + tint | Client Component region |
-| Boundary line | First server -> client transition |
-| Hover badge | Component name + file path |
-| `Ctrl + Left Click` / `Cmd + Left Click` | Open file in VS Code |
-
-<!-- 👇 OPTIONAL — a static screenshot showing both server (blue) and client (orange) regions side by side -->
-<!-- ![Server vs Client regions](./docs/regions.png) -->
+| 🔵 Blue border + tint | Server Component |
+| 🟠 Orange border + tint | Client Component |
+| ⚡ Boundary indicator | First server → client transition |
+| 🏷️ Hover badge | Component name + file path |
+| `Ctrl/Cmd + Left Click` | Open file directly in VS Code |
 
 ---
 
