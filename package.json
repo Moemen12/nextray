@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Moemen12/nextray"
+    "url": "git+https://github.com/Moemen12/nextray.git"
   },
   "keywords": [
     "nextjs",
@@ -57,7 +57,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+   "build": "tsc -p tsconfig.json && find dist -name '*.map' -delete",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
@@ -76,3 +76,6 @@
     "typescript": "^5.8.3"
   }
 }
+
+
+

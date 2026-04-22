@@ -14,6 +14,9 @@ With the Next.js App Router, there is no built-in visual map for server vs clien
 
 Nextray makes those boundaries visible instantly.
 
+<!-- 👇 HERO GIF — place your Peek recording here. Shows the tool in action before anything else. -->
+![Nextray demo](./docs/demo.gif)
+
 ---
 
 ## What It Shows
@@ -25,6 +28,9 @@ Nextray makes those boundaries visible instantly.
 | Boundary line | First server -> client transition |
 | Hover badge | Component name + file path |
 | `Ctrl + Left Click` / `Cmd + Left Click` | Open file in VS Code |
+
+<!-- 👇 OPTIONAL — a static screenshot showing both server (blue) and client (orange) regions side by side -->
+<!-- ![Server vs Client regions](./docs/regions.png) -->
 
 ---
 
@@ -118,4 +124,4 @@ Feedback and contributions are welcome.
 
 ## License
 
-MIT © Moemen Saade
+[MIT](LICENSE) © [Moemen Saadeh](https://github.com/Moemen12)
